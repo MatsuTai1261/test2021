@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>なんでもいいです</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <!-- 自作のCSSを読み込む -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+
+
+    <div class='fixed-top'>
+      <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">メニュー</a>
+        <button class="navbar-toggler" type="button"
+            data-toggle="collapse"
+            data-target="#navmenu1"
+            aria-controls="navmenu1"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu1">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="test.html">テスト画面へ</a>
+            <a class="nav-item nav-link" href="#">Menu#2</a>
+            <a class="nav-item nav-link" href="#">Menu#3</a>
+            <a class="nav-item nav-link" href="#">自転車</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+
+
+
+      <div class="container">
+
+            <!-- 行を作る -->
+            <div class="row">
+                <div class="col-12 col-sm-6 normal-box6 Regular shadow">あああああ</div>
+                <div class="col-12 col-sm-6 normal-box6 Regular shadow">いいいいい</div>
+            </div>
+      
+    <div>
+      <button onclick="hello()" type="button" class="btn btn-warning">おす</button>
+      <button onclick="rename()" type="button" class="btn btn-secondary">表示</button>
+      <div id="name"></div>
+    </div>
+  </div><!-- containerの閉じタグ -->
+
+      <footer class="fixed-bottom">
+        <div class="col-12 bg-warning m-0 p-2 text-dark text-center">
+        &copy;2021 IML
+        </div>
+        </footer>        
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
+<script>
+  function hello() 
+  {
+    alert('Hello, world!');
+  }
+
+  var myBool = false;
+  function rename(){
+    if(!myBool){//falseなら
+      //document.getElementById("name").innerHTML = '<div class="alert alert-primary" role="alert"><p>田中</p></div>';
+      $("#name").html('<div class="alert alert-primary" role="alert"><p>田中</p></div>');
+      myBool = true;
+    }else{
+      //document.getElementById("name").innerHTML = '';
+      $("#name").html('');
+      myBool = false;
+    }
+
+    
+
+  }
+
+//JavaScriptの変数は、
+//var グローバル
+//let プライベート変数
+//const　定数
+
+  </script>  

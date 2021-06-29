@@ -1,0 +1,11 @@
+.normal-box6{
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #fff9c4;
+    border: dashed 3px #ffca28;
+  }
+  
+  .normal-box6 p{
+    margin: 0;
+    padding: 0;
+  }
